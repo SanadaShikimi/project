@@ -1,0 +1,25 @@
+/* src/index.css */
+:root {
+  --primary-color: #007bff; /* Màu xanh chủ đạo */
+  --text-color: #333;
+  --bg-light: #f8f9fa; /* Màu nền của Editor */
+  --bg-white: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  /* XÓA: display: flex, place-items: center */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* THAY: #242424 */
+  color: var(--text-color); /* THAY: rgba(255, 255, 255, 0.87) */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Xóa tất cả các style mặc định khác cho a, button, h1, @media...
+   Chúng ta sẽ định nghĩa chúng trong từng component cụ thể */

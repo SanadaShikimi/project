@@ -1,0 +1,48 @@
+/* src/pages/Login.css */
+/* (Bạn có thể gộp vào EditorForm.css nếu muốn) */
+
+/* Đường kẻ "HOẶC" */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #888;
+  margin: 20px 0;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.divider:not(:empty)::before {
+  margin-right: 1em;
+}
+.divider:not(:empty)::after {
+  margin-left: 1em;
+}
+
+/* Nút Social */
+.btn-social {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.95em;
+}
+
+.btn-social.google {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #444;
+}
+.btn-social.google:hover {
+  background-color: #f8f8f8;
+}

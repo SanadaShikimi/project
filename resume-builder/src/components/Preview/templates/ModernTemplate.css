@@ -1,0 +1,51 @@
+/* src/components/Preview/templates/ModernTemplate.css */
+.resume-modern {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 25mm;
+  background: var(--bg-white);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+  color: #333; /* Đảm bảo CV luôn là nền trắng chữ đen */
+}
+
+/* ... (toàn bộ nội dung file ModernTemplate.css từ câu trả lời trước) ... */
+/* (Bao gồm .resume-header, .resume-body, .resume-section, .job-item, v.v...) */
+
+/* Dưới đây là phần rút gọn (hãy sao chép toàn bộ code từ câu trả lời trước) */
+.resume-header {
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.resume-header h1 {
+  margin: 0; font-size: 2.8rem; font-weight: 700; color: #222;
+}
+.resume-header h2 {
+  margin: 5px 0 15px 0; font-size: 1.5rem; font-weight: 300; color: #555;
+}
+.contact-info {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
+  font-size: 0.95rem; color: #444;
+}
+.resume-section {
+  margin-bottom: 25px;
+}
+.resume-section h3 {
+  font-size: 1.4rem; font-weight: 600; color: var(--primary-color);
+  border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 0;
+  margin-bottom: 20px;
+}
+.job-item {
+  margin-bottom: 20px;
+}
+.job-item strong {
+  font-size: 1.1rem; font-weight: 600; color: #333; display: block;
+}
+.job-dates {
+  float: right; font-style: italic; font-weight: 500; color: #777;
+}
+.job-item p {
+  margin: 5px 0 0 0; line-height: 1.6;
+}

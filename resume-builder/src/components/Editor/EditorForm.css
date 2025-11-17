@@ -1,0 +1,212 @@
+/* src/components/Editor/EditorForm.css (BẢN HOÀN CHỈNH) */
+
+/* === BỐ CỤC CHUNG === */
+.form-group-item {
+  position: relative;
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #fafafa;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.item-divider {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+}
+
+/* === SỬA LỖI HEADER (KÉO/THẢ VÀ TIÊU ĐỀ) === */
+
+.form-section-header {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-bottom: 10px;
+}
+
+/* Tay cầm (Drag Handle) */
+.drag-handle {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: grab;
+  color: #aaa;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.drag-handle:hover {
+  color: #333;
+}
+
+/* Tiêu đề (H3) */
+.form-section-header h3 {
+  flex: 1; /* Chiếm không gian ở giữa */
+  margin: 0;
+  margin-left: 10px; /* Khoảng cách với tay cầm */
+  
+  /* Chống tràn chữ */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+/* Nút "+ Thêm" (HEADER) */
+.btn-add {
+  margin-left: auto; /* <-- DÒNG QUAN TRỌNG NHẤT (Đẩy nút sang phải) */
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.btn-add:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Hiệu ứng khi kéo (Drag) */
+.form-section.draggable {
+  border: 1px solid transparent;
+}
+.draggable-section.is-dragging .form-section {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+/* === CÁC NÚT KHÁC === */
+
+/* Nút "Xóa" (dấu X) */
+.btn-delete {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #fee;
+  color: #f00;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-delete:hover {
+  background-color: #f00;
+  color: white;
+}
+
+/* === MỤC KỸ NĂNG (SKILLS) === */
+.skill-add-form {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.skill-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-add-skill {
+  padding: 8px 12px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn-add-skill:hover {
+  background-color: #0056b3;
+}
+
+.skill-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.btn-delete-skill {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  border: none;
+  background-color: #aaa;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+.btn-delete-skill:hover {
+  background-color: #f00;
+}
+
+/* === NÚT HỖ TRỢ AI === */
+.btn-ai {
+  background-color: #f0f5ff;
+  border: 1px solid #adc6ff;
+  color: var(--primary-color);
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-ai:hover {
+  background-color: #e6f0ff;
+}
+
+.btn-ai:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  border-color: #d9d9d9;
+  cursor: not-allowed;
+}
